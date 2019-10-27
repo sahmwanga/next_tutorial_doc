@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import "./Layout.scss";
+// import "./Layout.scss";
 
 const Header = () => (
   <nav className="navbar navbar-light bg-light">
@@ -8,11 +8,16 @@ const Header = () => (
   </nav>
 );
 
-const Layout = props => {
+const Layout = ({ children, title }) => {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <Header />
-      <div className="Layout">{props.children}</div>
+      <div className="container">
+        <div className="Layout">{children}</div>
+      </div>
     </>
   );
 };

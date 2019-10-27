@@ -106,59 +106,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout.scss */ "./containers/Layout.scss");
-/* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Layout_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/dev/Documents/prs/tutorials/nextJS/tutor_from_doc/containers/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
+ // import "./Layout.scss";
 
 const Header = () => __jsx("nav", {
-  className: "navbar navbar-light bg-light",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+  className: "navbar navbar-light bg-light"
 }, __jsx("a", {
-  className: "navbar-brand",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
+  className: "navbar-brand"
 }, "Sahmwanga"));
 
-const Layout = props => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Header, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }), __jsx("div", {
-    className: "Layout",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, props.children));
+const Layout = ({
+  children,
+  title
+}) => {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("title", null, title)), __jsx(Header, null), __jsx("div", {
+    className: "container"
+  }, __jsx("div", {
+    className: "Layout"
+  }, children)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./containers/Layout.scss":
-/*!********************************!*\
-  !*** ./containers/Layout.scss ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
@@ -185,25 +154,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _containers_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../containers/Layout */ "./containers/Layout.js");
-var _jsxFileName = "/home/dev/Documents/prs/tutorials/nextJS/tutor_from_doc/pages/_error.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 /* harmony default export */ __webpack_exports__["default"] = (({
   statusCode
-}) => __jsx(_containers_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, "Could not find the page")));
+}) => __jsx(_containers_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, __jsx("p", null, "Could not find the page")));
 
 /***/ }),
 
@@ -227,7 +183,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_error */ "./pages/_error.js");
 
-var _jsxFileName = "/home/dev/Documents/prs/tutorials/nextJS/tutor_from_doc/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -235,68 +190,60 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-const Index = ({
-  data,
-  statusCode
-}) => {
-  if (statusCode) {
-    return __jsx(_error__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      statusCode: statusCode,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: undefined
-    });
+class Index extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  static async getInitialProps() {
+    let response, statusCode, data_json;
+
+    try {
+      response = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("https://jsonplaceholder.typicode.com/users");
+      statusCode = response.status > 200 ? response.status : false;
+      data_json = await response.data;
+    } catch (error) {
+      return {
+        data: [],
+        statusCode
+      };
+    }
+
+    return {
+      data: data_json,
+      statusCode
+    };
   }
 
-  return __jsx(_containers_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    statusCode: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  }, "Index page"), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(data), data.map(user => __jsx("div", {
-    key: user.id,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, user.id, " - ", user.username)))));
-};
+  componentDidMount() {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js").then(registration => {
+        console.log("Service  worker registration successul", registration);
+      }).catch(error => {
+        console.warn("service worker registration fail", error);
+      });
+    }
+  }
 
-Index.getInitialProps = async ({
-  req
-}) => {
-  const response = await axios__WEBPACK_IMPORTED_MODULE_4___default.a.get("https://jsonplaceholder.typicode.com/users");
-  const statusCode = response.status > 200 ? response.status : false;
-  const data_json = await response.data;
-  console.log(response.status);
-  return {
-    data: data_json,
-    statusCode
-  };
-};
+  render() {
+    const {
+      data,
+      statusCode
+    } = this.props;
+
+    if (statusCode) {
+      return __jsx(_error__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        statusCode: statusCode
+      });
+    }
+
+    return __jsx(_containers_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      statusCode: statusCode,
+      title: "sahmwanga"
+    }, __jsx("div", null, __jsx("div", null, data.map(user => __jsx("div", {
+      key: user.id
+    }, __jsx("h2", null, user.id, " - ", user.username), __jsx("p", {
+      className: "text-muted"
+    }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(user.address)), __jsx("hr", null))))));
+  }
+
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
@@ -309,7 +256,12 @@ Index.getInitialProps = async ({
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+// @import "../theme/theme";
 
+// p{
+//     color:$primary-light;
+//     font-size: 20px;
+// }
 
 /***/ }),
 

@@ -1303,7 +1303,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "/home/dev/Documents/prs/tutorials/nextJS/tutor_from_doc/pages/_document.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
@@ -1316,78 +1315,84 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_3___default.a {
   }
 
   render() {
-    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["Html"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["Head"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, __jsx("title", {
-      className: "jsx-2295893639",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, "My Project"), __jsx("meta", {
+    return __jsx("html", {
+      lang: "en-US",
+      className: "jsx-201012909"
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["Head"], null, __jsx("link", {
+      rel: "manifest",
+      href: "/static/manifest.json",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "mobile-web-app-capable",
+      content: "yes",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "apple-mobile-web-app-capable",
+      content: "yes",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "application-name",
+      content: "sahmwanga",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "apple-mobile-web-app-title",
+      content: "sahmwanga",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "theme-color",
+      content: "#005b4f",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "msapplication-navbutton-color",
+      content: "#005b4f",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "apple-mobile-web-app-status-bar-style",
+      content: "black-translucent",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
+      name: "msapplication-starturl",
+      content: "/",
+      className: "jsx-201012909"
+    }), __jsx("meta", {
       name: "viewport",
-      content: "initial-scale=1.0, width=device-width",
-      key: "viewport",
-      className: "jsx-2295893639",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
+      content: "width=device-width, initial-scale=1, shrink-to-fit=no",
+      className: "jsx-201012909"
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "152x152",
+      href: "/static/icons/icon-512x512",
+      className: "jsx-201012909"
+    }), __jsx("link", {
+      rel: "apple-touch-icon",
+      type: "image/png",
+      sizes: "152x152",
+      href: "/static/icons/icon-512x512",
+      className: "jsx-201012909"
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "192x192",
+      href: "/static/icons/icon-192x192",
+      className: "jsx-201012909"
+    }), __jsx("link", {
+      rel: "apple-touch-icon",
+      type: "image/png",
+      sizes: "192x192",
+      href: "/static/icons/icon-192x192",
+      className: "jsx-201012909"
     }), __jsx("link", {
       rel: "stylesheet",
       href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
       integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
-      crossOrigin: "anonymous",
-      className: "jsx-2295893639",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }), __jsx("link", {
-      href: "https://fonts.googleapis.com/css?family=Lato&display=swap",
-      rel: "stylesheet",
-      className: "jsx-2295893639",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
+      crossorigin: "anonymous",
+      className: "jsx-201012909"
     })), __jsx("body", {
-      className: "jsx-2295893639",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["Main"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31
-      },
-      __self: this
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["NextScript"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      id: "2295893639",
-      __self: this
-    }, "body{font-family:\"Lato\",sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2Rldi9Eb2N1bWVudHMvcHJzL3R1dG9yaWFscy9uZXh0SlMvdHV0b3JfZnJvbV9kb2MvcGFnZXMvX2RvY3VtZW50LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtDVyxBQUc4Qyw4QkFDakMiLCJmaWxlIjoiL2hvbWUvZGV2L0RvY3VtZW50cy9wcnMvdHV0b3JpYWxzL25leHRKUy90dXRvcl9mcm9tX2RvYy9wYWdlcy9fZG9jdW1lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgRG9jdW1lbnQsIHsgSGVhZCwgSHRtbCwgTWFpbiwgTmV4dFNjcmlwdCB9IGZyb20gXCJuZXh0L2RvY3VtZW50XCI7XG5cbmNsYXNzIE15RG9jdW1lbnQgZXh0ZW5kcyBEb2N1bWVudCB7XG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMoY3R4KSB7XG4gICAgY29uc3QgaW5pdGlhbFByb3BzID0gYXdhaXQgRG9jdW1lbnQuZ2V0SW5pdGlhbFByb3BzKGN0eCk7XG4gICAgcmV0dXJuIHsgLi4uaW5pdGlhbFByb3BzIH07XG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxIdG1sPlxuICAgICAgICA8SGVhZD5cbiAgICAgICAgICA8dGl0bGU+TXkgUHJvamVjdDwvdGl0bGU+XG4gICAgICAgICAgPG1ldGFcbiAgICAgICAgICAgIG5hbWU9XCJ2aWV3cG9ydFwiXG4gICAgICAgICAgICBjb250ZW50PVwiaW5pdGlhbC1zY2FsZT0xLjAsIHdpZHRoPWRldmljZS13aWR0aFwiXG4gICAgICAgICAgICBrZXk9XCJ2aWV3cG9ydFwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8bGlua1xuICAgICAgICAgICAgcmVsPVwic3R5bGVzaGVldFwiXG4gICAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9zdGFja3BhdGguYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvNC4zLjEvY3NzL2Jvb3RzdHJhcC5taW4uY3NzXCJcbiAgICAgICAgICAgIGludGVncml0eT1cInNoYTM4NC1nZ095UjBpWENiTVF2M1hpcG1hMzRNRCtkSC8xZlE3ODQvajZjWS9pSlRRVU9oY1dyN3g5SnZvUnhUMk1adzFUXCJcbiAgICAgICAgICAgIGNyb3NzT3JpZ2luPVwiYW5vbnltb3VzXCJcbiAgICAgICAgICA+PC9saW5rPlxuICAgICAgICAgIDxsaW5rXG4gICAgICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PUxhdG8mZGlzcGxheT1zd2FwXCJcbiAgICAgICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxuICAgICAgICAgID48L2xpbms+XG4gICAgICAgIDwvSGVhZD5cbiAgICAgICAgPGJvZHk+XG4gICAgICAgICAgPE1haW4gLz5cbiAgICAgICAgICA8TmV4dFNjcmlwdCAvPlxuICAgICAgICA8L2JvZHk+XG4gICAgICAgIDxzdHlsZSBnbG9iYWwganN4PlxuICAgICAgICAgIHtgXG4gICAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgICAgZm9udC1mYW1pbHk6IFwiTGF0b1wiLCBzYW5zLXNlcmlmO1xuICAgICAgICAgICAgfVxuICAgICAgICAgIGB9XG4gICAgICAgIDwvc3R5bGU+XG4gICAgICA8L0h0bWw+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBNeURvY3VtZW50O1xuIl19 */\n/*@ sourceURL=/home/dev/Documents/prs/tutorials/nextJS/tutor_from_doc/pages/_document.js */"));
+      className: "jsx-201012909"
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_3__["NextScript"], null)), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      id: "201012909"
+    }, "html,body{font-family:\"Lato\",sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2Rldi9Eb2N1bWVudHMvcHJzL3R1dG9yaWFscy9uZXh0SlMvdHV0b3JfZnJvbV9kb2MvcGFnZXMvX2RvY3VtZW50LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtFVyxBQUc4Qyw4QkFDakMiLCJmaWxlIjoiL2hvbWUvZGV2L0RvY3VtZW50cy9wcnMvdHV0b3JpYWxzL25leHRKUy90dXRvcl9mcm9tX2RvYy9wYWdlcy9fZG9jdW1lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgRG9jdW1lbnQsIHsgSGVhZCwgTWFpbiwgTmV4dFNjcmlwdCB9IGZyb20gXCJuZXh0L2RvY3VtZW50XCI7XG5cbmNsYXNzIE15RG9jdW1lbnQgZXh0ZW5kcyBEb2N1bWVudCB7XG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMoY3R4KSB7XG4gICAgY29uc3QgaW5pdGlhbFByb3BzID0gYXdhaXQgRG9jdW1lbnQuZ2V0SW5pdGlhbFByb3BzKGN0eCk7XG4gICAgcmV0dXJuIHsgLi4uaW5pdGlhbFByb3BzIH07XG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxodG1sIGxhbmc9XCJlbi1VU1wiPlxuICAgICAgICA8SGVhZD5cbiAgICAgICAgICA8bGluayByZWw9XCJtYW5pZmVzdFwiIGhyZWY9XCIvc3RhdGljL21hbmlmZXN0Lmpzb25cIiAvPlxuXG4gICAgICAgICAgPG1ldGEgbmFtZT1cIm1vYmlsZS13ZWItYXBwLWNhcGFibGVcIiBjb250ZW50PVwieWVzXCIgLz5cbiAgICAgICAgICA8bWV0YSBuYW1lPVwiYXBwbGUtbW9iaWxlLXdlYi1hcHAtY2FwYWJsZVwiIGNvbnRlbnQ9XCJ5ZXNcIiAvPlxuICAgICAgICAgIDxtZXRhIG5hbWU9XCJhcHBsaWNhdGlvbi1uYW1lXCIgY29udGVudD1cInNhaG13YW5nYVwiIC8+XG4gICAgICAgICAgPG1ldGEgbmFtZT1cImFwcGxlLW1vYmlsZS13ZWItYXBwLXRpdGxlXCIgY29udGVudD1cInNhaG13YW5nYVwiIC8+XG4gICAgICAgICAgPG1ldGEgbmFtZT1cInRoZW1lLWNvbG9yXCIgY29udGVudD1cIiMwMDViNGZcIiAvPlxuICAgICAgICAgIDxtZXRhIG5hbWU9XCJtc2FwcGxpY2F0aW9uLW5hdmJ1dHRvbi1jb2xvclwiIGNvbnRlbnQ9XCIjMDA1YjRmXCIgLz5cbiAgICAgICAgICA8bWV0YVxuICAgICAgICAgICAgbmFtZT1cImFwcGxlLW1vYmlsZS13ZWItYXBwLXN0YXR1cy1iYXItc3R5bGVcIlxuICAgICAgICAgICAgY29udGVudD1cImJsYWNrLXRyYW5zbHVjZW50XCJcbiAgICAgICAgICAvPlxuICAgICAgICAgIDxtZXRhIG5hbWU9XCJtc2FwcGxpY2F0aW9uLXN0YXJ0dXJsXCIgY29udGVudD1cIi9cIiAvPlxuICAgICAgICAgIDxtZXRhXG4gICAgICAgICAgICBuYW1lPVwidmlld3BvcnRcIlxuICAgICAgICAgICAgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLCBzaHJpbmstdG8tZml0PW5vXCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGxpbmtcbiAgICAgICAgICAgIHJlbD1cImljb25cIlxuICAgICAgICAgICAgdHlwZT1cImltYWdlL3BuZ1wiXG4gICAgICAgICAgICBzaXplcz1cIjE1MngxNTJcIlxuICAgICAgICAgICAgaHJlZj1cIi9zdGF0aWMvaWNvbnMvaWNvbi01MTJ4NTEyXCJcbiAgICAgICAgICAvPlxuICAgICAgICAgIDxsaW5rXG4gICAgICAgICAgICByZWw9XCJhcHBsZS10b3VjaC1pY29uXCJcbiAgICAgICAgICAgIHR5cGU9XCJpbWFnZS9wbmdcIlxuICAgICAgICAgICAgc2l6ZXM9XCIxNTJ4MTUyXCJcbiAgICAgICAgICAgIGhyZWY9XCIvc3RhdGljL2ljb25zL2ljb24tNTEyeDUxMlwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICA8bGlua1xuICAgICAgICAgICAgcmVsPVwiaWNvblwiXG4gICAgICAgICAgICB0eXBlPVwiaW1hZ2UvcG5nXCJcbiAgICAgICAgICAgIHNpemVzPVwiMTkyeDE5MlwiXG4gICAgICAgICAgICBocmVmPVwiL3N0YXRpYy9pY29ucy9pY29uLTE5MngxOTJcIlxuICAgICAgICAgIC8+XG4gICAgICAgICAgPGxpbmtcbiAgICAgICAgICAgIHJlbD1cImFwcGxlLXRvdWNoLWljb25cIlxuICAgICAgICAgICAgdHlwZT1cImltYWdlL3BuZ1wiXG4gICAgICAgICAgICBzaXplcz1cIjE5MngxOTJcIlxuICAgICAgICAgICAgaHJlZj1cIi9zdGF0aWMvaWNvbnMvaWNvbi0xOTJ4MTkyXCJcbiAgICAgICAgICAvPlxuICAgICAgICAgIDxsaW5rXG4gICAgICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcbiAgICAgICAgICAgIGhyZWY9XCJodHRwczovL3N0YWNrcGF0aC5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC80LjMuMS9jc3MvYm9vdHN0cmFwLm1pbi5jc3NcIlxuICAgICAgICAgICAgaW50ZWdyaXR5PVwic2hhMzg0LWdnT3lSMGlYQ2JNUXYzWGlwbWEzNE1EK2RILzFmUTc4NC9qNmNZL2lKVFFVT2hjV3I3eDlKdm9SeFQyTVp3MVRcIlxuICAgICAgICAgICAgY3Jvc3NvcmlnaW49XCJhbm9ueW1vdXNcIlxuICAgICAgICAgIC8+XG4gICAgICAgIDwvSGVhZD5cbiAgICAgICAgPGJvZHk+XG4gICAgICAgICAgPE1haW4gLz5cbiAgICAgICAgICA8TmV4dFNjcmlwdCAvPlxuICAgICAgICA8L2JvZHk+XG4gICAgICAgIDxzdHlsZSBnbG9iYWwganN4PlxuICAgICAgICAgIHtgXG4gICAgICAgICAgICBodG1sLGJvZHkge1xuICAgICAgICAgICAgICBmb250LWZhbWlseTogXCJMYXRvXCIsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgYH1cbiAgICAgICAgPC9zdHlsZT5cbiAgICAgIDwvaHRtbD5cbiAgICApO1xuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15RG9jdW1lbnQ7XG4iXX0= */\n/*@ sourceURL=/home/dev/Documents/prs/tutorials/nextJS/tutor_from_doc/pages/_document.js */"));
   }
 
 }

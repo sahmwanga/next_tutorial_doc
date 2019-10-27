@@ -1,4 +1,4 @@
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import Document, { Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -8,24 +8,56 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <html lang="en-US">
         <Head>
-          <title>My Project</title>
+          <link rel="manifest" href="/static/manifest.json" />
+
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="application-name" content="sahmwanga" />
+          <meta name="apple-mobile-web-app-title" content="sahmwanga" />
+          <meta name="theme-color" content="#005b4f" />
+          <meta name="msapplication-navbutton-color" content="#005b4f" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
+          <meta name="msapplication-starturl" content="/" />
           <meta
             name="viewport"
-            content="initial-scale=1.0, width=device-width"
-            key="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="152x152"
+            href="/static/icons/icon-512x512"
+          />
+          <link
+            rel="apple-touch-icon"
+            type="image/png"
+            sizes="152x152"
+            href="/static/icons/icon-512x512"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/static/icons/icon-192x192"
+          />
+          <link
+            rel="apple-touch-icon"
+            type="image/png"
+            sizes="192x192"
+            href="/static/icons/icon-192x192"
           />
           <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossOrigin="anonymous"
-          ></link>
-          <link
-            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-            rel="stylesheet"
-          ></link>
+            crossorigin="anonymous"
+          />
         </Head>
         <body>
           <Main />
@@ -33,12 +65,12 @@ class MyDocument extends Document {
         </body>
         <style global jsx>
           {`
-            body {
+            html,body {
               font-family: "Lato", sans-serif;
             }
           `}
         </style>
-      </Html>
+      </html>
     );
   }
 }

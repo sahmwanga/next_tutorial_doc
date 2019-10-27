@@ -1,0 +1,20 @@
+{
+  "name": "sahmwanga",
+  "short_name": "sahmwanga",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#005b4f",
+  "icons": [
+    {
+      "src": "/static/icons/icon-512x512.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

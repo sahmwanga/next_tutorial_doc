@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nimport Layout from \"../containers/Layout\";\nexport default (function (_ref) {\n  var statusCode = _ref.statusCode;\n  return __jsx(Layout, null, __jsx(\"p\", null, \"Could not find the page\"));\n});","map":null,"metadata":{},"sourceType":"module"}
