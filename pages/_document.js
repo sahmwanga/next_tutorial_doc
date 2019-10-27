@@ -22,6 +22,7 @@ class MyDocument extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="black-translucent"
           />
+          <meta name="content" description="sahmwanga next js application" />
           <meta name="msapplication-starturl" content="/" />
           <meta
             name="viewport"
@@ -65,7 +66,8 @@ class MyDocument extends Document {
         </body>
         <style global jsx>
           {`
-            html,body {
+            html,
+            body {
               font-family: "Lato", sans-serif;
             }
           `}

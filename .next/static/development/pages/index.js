@@ -7444,7 +7444,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fdev%2FDocuments%2Fprs%2Ftutorials%2FnextJS%2Ftutor_from_doc%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -7467,5 +7467,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
