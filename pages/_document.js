@@ -1,12 +1,16 @@
 import Document, { Head, Main, NextScript } from "next/document";
+import { getUserSignedCookie, getUserScript } from "../lib/auth";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    const userData = await getUserSignedCookie(ctx.req);
+    return { ...initialProps, ...userData };
   }
 
   render() {
+    const { user = {} } = this.props;
+
     return (
       <html lang="en-US">
         <Head>
@@ -62,6 +66,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <script dangerouslySetInnerHTML={{ __html: getUserScript(user) }} />
           <NextScript />
         </body>
         <style global jsx>
