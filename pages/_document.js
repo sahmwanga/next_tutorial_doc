@@ -1,12 +1,16 @@
 import Document, { Head, Main, NextScript } from "next/document";
+import { getServerSideToken, getUserScript } from "../lib/auth";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    const userData = await getServerSideToken(ctx.req);
+    return { ...initialProps, ...userData };
   }
 
   render() {
+    const { user = {} } = this.props;
+
     return (
       <html lang="en-US">
         <Head>
@@ -57,11 +61,12 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
         </Head>
         <body>
           <Main />
+          <script dangerouslySetInnerHTML={{ __html: getUserScript(user) }} />
           <NextScript />
         </body>
         <style global jsx>
